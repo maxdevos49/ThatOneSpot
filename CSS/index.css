@@ -1,0 +1,107 @@
+/*
+Watermelon: #FF3B3F
+Sky: #CAEBF2
+Carbon: #A9A9A9
+Neatral: #EFEFEF
+	*/
+html {
+	margin: 0;
+	margin: 0;
+	font-family: 'Aldrich';
+	color: #A9A9A9;
+
+	height: 100%;
+}
+body {
+	margin: 0;
+	margin: 0;
+	height: 100%;
+}
+
+h1 {
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+img {
+	margin: 0;
+	padding: 0;
+}
+hr {
+	border-width: 4px 0 0 0;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.imgclass div {
+	height:100%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: blue;
+}
+#img1 {
+	background-image: url("Beachimg.jpg");
+}
+#img2 {
+	background-image: url("Beachimg.jpg");
+}
+#img3 {
+	background-image: url("Beachimg.jpg");
+}
+
+
+a {
+	text-decoration: none;
+	color: #A9A9A9;
+}
+
+article {
+	background-color: #CAEBF2;
+	padding: 5px 3px 5px 3px; 
+}
+p {
+	font-size: 120%;
+}
+nav li {
+	float: left;
+	width: 20%;
+}
+
+nav li a {
+    display: block;
+    padding: 8px;
+    background-color: #FF3B3F;
+}
+
+header div {
+	background-color: #EFEFEF;
+	text-align: center;
+	padding: 10px 0 2px 0;
+}
+
+#title {
+	font-size: 300%;
+}
+
+footer {
+	background-color: #EFEFEF; 
+}
+footer ul {
+	list-style-type: none;
+    margin: 5px;
+    padding: 0;
+    overflow: hidden;
+}
+footer li {
+	float: left;
+	margin: 0 5px 0 5px;
+}
+main {
+	height: 100%;
+}
