@@ -1,5 +1,7 @@
 body, html {
     height: 100%;
+    font-family: Aldrich;
+    margin: 0;
 }
 
 #img1 {
@@ -16,10 +18,44 @@ body, html {
 	background-size: cover;
 	background-attachment: fixed;
 	background-color: blue;
+	z-index: 0;
 }
 .text {
 	height: 50%;
 	width: 100%;
 	background-color: grey;
+	z-index: 1;
+}
+
+.header{
+	width: 100%;
+	position: fixed;
+	z-index: 2;
+	background-color: grey;
+	top: 0;
+	left: 0;
+	opacity: 0.75;
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin: 10px 10px 10px 10px;
+    padding-top: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	font-size: 150%;
+}
+li:hover {
+	background-color: white;
+	
 }
 
