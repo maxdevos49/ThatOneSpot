@@ -6,7 +6,7 @@ body, html {
 
 #img1 {
 	background-image: url("../Images/secondTree.png");
-	height: 80%;
+	height: 75%;
 }
 #img2 {
 	background-image: url("../Images/HDRGoldenGate.png");
@@ -39,29 +39,65 @@ body, html {
 	padding: 5px;
 }
 #txt1 h1{
-	background-color: black;
+	background: black; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#c3c6cc 15%, black 16%); /* Safari 5.1-6.0 */
+    background: -o-linear-gradient(#c3c6cc 15%, black 16%); /* For Opera 11.6 to 12.0 */
+    background: -moz-linear-gradient(#c3c6cc 15%, black 16%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#c3c6cc 15%, black 16%); /* Standard syntax (must be last) */
 	width: 97%;
-	padding: 10px;
+	padding: 25px 10px 10px 10px;
 	color: #4dff26;
 	border-radius: 5px;
+	font-family: "courier new";
+	margin: 5px 0 10px 0;
 }
-#txt1 h2,p{
+#txt1 div{
+	width: 97%;
+	padding: 10px;
+	background: black; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#c3c6cc 12%, #393c42 13%); /* Safari 5.1-6.0 */
+    background: -o-linear-gradient(#c3c6cc 12%, #393c42 13%); /* For Opera 11.6 to 12.0 */
+    background: -moz-linear-gradient(#c3c6cc 12%, #393c42 13%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#c3c6cc 12%, #393c42 13%); /* Standard syntax (must be last) */
+	border-radius: 5px;
+	color: grey;
+	position: relative;
+}
+#txt1 ol{
+	padding-top: 17px;
+}
+#txt1  div h2,p{
 	text-align: center;
+	color: black;
+}
+#txt1 div div{
+	background: none;
+	background-color: white;
+	position: absolute;
+	left:25%;
+	top:25%;
+	width:50%;
+	height:50%;
+	padding-bottom: 20px;
 }
 #txt3 {
 	height: 20%;
 }
-ul {
+ul,ol {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-li {
+.header li {
     display: inline;
     padding: 10px 10px 10px 10px;
     font-size: 150%;
     color: white;
+}
+pre {
+	margin: 0;
+	padding: 0;
 }
 
 a {
@@ -71,7 +107,12 @@ a {
 }
 a:hover {
 	background-color: silver;
-
-
 }
 
+#grad1 {
+    background: black; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#c3c6cc 5%, black 6%); /* Safari 5.1-6.0 */
+    background: -o-linear-gradient(#c3c6cc 5%, black 6%); /* For Opera 11.6 to 12.0 */
+    background: -moz-linear-gradient(#c3c6cc 5%, black 6%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#c3c6cc 5%, black 6%); /* Standard syntax (must be last) */
+}
