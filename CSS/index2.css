@@ -1,17 +1,17 @@
 body, html {
     height: 100%;
     font-family: Aldrich;
-    margin: 0;
+    margin: 1px;
 }
 
 #img1 {
-	background-image: url("../Images/Beachimg.jpg");
+	background-image: url("../Images/secondTree.png");
 }
 #img2 {
-	background-image: url("../Images/forestClearing.jpg");
+	background-image: url("../Images/HDRGoldenGate.png");
 }
 #img3 {
-	background-image: url("../Images/Beachimg.jpg");
+	background-image: url("../Images/bowlingAlley.png");
 }
 .img {
 	height:100%;
@@ -56,6 +56,6 @@ a {
 }
 li:hover {
 	background-color: white;
-	
+
 }
 
