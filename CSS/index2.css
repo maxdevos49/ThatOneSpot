@@ -6,6 +6,7 @@ body, html {
 
 #img1 {
 	background-image: url("../Images/secondTree.png");
+	height: 85%;
 }
 #img2 {
 	background-image: url("../Images/HDRGoldenGate.png");
@@ -23,8 +24,9 @@ body, html {
 .text {
 	height: 50%;
 	width: 100%;
-	background-color: grey;
+	background-color: white;
 	z-index: 1;
+	padding: 10px;
 }
 
 .header{
@@ -34,8 +36,7 @@ body, html {
 	background-color: grey;
 	top: 0;
 	left: 0;
-	opacity: 0.75;
-
+	padding: 5px;
 }
 ul {
     list-style-type: none;
@@ -45,17 +46,17 @@ ul {
 
 li {
     display: inline;
-    margin: 10px 10px 10px 10px;
-    padding-top: 10px;
+    padding: 10px 10px 10px 10px;
+    font-size: 150%;
+    color: white;
 }
 
 a {
 	text-decoration: none;
 	color: white;
-	font-size: 150%;
-}
-li:hover {
-	background-color: white;
 
+}
+a:hover {
+	background-color: white;
 }
 
