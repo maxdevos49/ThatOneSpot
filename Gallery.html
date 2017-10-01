@@ -2,8 +2,32 @@
 <html>
 <head>
 	<title>Gallery</title>
+	<link rel="stylesheet" type="text/css" href="./CSS/gallery.css">
+	<link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+	<link type="text/xml" href="./Images.xml">
+	<script type="text/javascript" src="./galleryViewer.js"></script>
 </head>
-<body>
-<h1>Comming Soon to showcase 3D art.</h1>
+<body onload="init()">
+	<div class="header">
+		<h1><a href="./gallery.html">Gallery</a></h1><h2><a href="./index.html">Home</a></h2><h2><a href="./Resume.html">Resume</a></h2><h2><a href="./Games/index.html">Projects</a></h2>
+
+	</div>
+
+	<div class="slider">
+
+		<div id="picView">
+			<canvas id="slideView" height="500" width="600">If you see this then you sir/mam are lost in the stone age</canvas>
+		</div>
+
+		<div id="buttContainer">
+			<button><<<<<</button><button>>>>>>></button>
+		</div>
+		<div class="minimizedView"></div>
+	</div>
+
+	<footer>
+		
+	</footer>
+
 </body>
 </html>
