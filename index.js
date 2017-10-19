@@ -77,7 +77,7 @@ http.createServer(function (req, res) {
     });
   }
 
-}).listen(8000);
+}).listen(8080);
 
 
 function getTime(){
