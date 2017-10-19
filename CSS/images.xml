@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<image_library>
+	
+	<image>
+		<location>./Images/hdrPlaneRender.png</location>
+		<title>Cessna 172</title>
+		<date>Fall 2016</date>
+		<description>As I was taking pilots lessons I modeled the airplane I was learning in.</description>
+	</image>
+
+	<image>
+		<location>./Images/HDRGoldenGate.png</location>
+		<title>Golden Gate</title>
+		<date>Winter 2016</date>
+		<description>Remembering when I visited San Francisco when I was younger I modeled the bridge.</description>
+	</image>
+
+<!-- 	<image>
+		<location></location>
+		<title></title>
+		<date></date>
+		<description></description>
+	</image>
+
+	<image>
+		<location></location>
+		<title></title>
+		<date></date>
+		<description></description>
+	</image>
+
+	<image>
+		<location></location>
+		<title></title>
+		<date></date>
+		<description></description>
+	</image>
+
+	<image>
+		<location></location>
+		<title></title>
+		<date></date>
+		<description></description>
+	</image> -->
+
+</image_library>
