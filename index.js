@@ -1,3 +1,5 @@
+/*global require:true, console:true */
+"use strict";
 
 //require http module componets
 var http = require('http');
@@ -11,7 +13,7 @@ var chalk = require('chalk');
 var serverVersion = 0.1;
 
 const error = chalk.keyword('red');
-const warning = chalk.keyword('yellow');
+//const warning = chalk.keyword('yellow');
 const info = chalk.keyword('white');
 
 
