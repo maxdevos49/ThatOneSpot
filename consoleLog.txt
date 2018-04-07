@@ -285,3 +285,7 @@
 13:21:40-->New connection to /CSS/index.css
 13:34:49-->New connection to /index.html
 13:34:49-->New connection to /CSS/index.css
+14:4:35-->SERVER STARTED. Version: 0.1
+14:4:44-->New connection to /
+14:4:45-->New connection to /CSS/index.css
+14:4:45-->New connection to /Images/favicon.ico
