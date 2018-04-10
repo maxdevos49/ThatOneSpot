@@ -1,34 +1,37 @@
-html{
-	padding: 0 10px 0 10px;
-	background-color: white;
-}
 body{
-	background-color: #bca66d;
-	padding: 0;
+	display:flex;
+	flex-direction: column;
+	font-family: "Aldrich";
 	margin: 0;
-	font-family: Aldrich;
+	pading:0;
 }
-.header{
-	background-color: white;
-
-}
-.header h1,h2{
-	margin: 0 1px 0 1px;
-	padding: 4px 5px 0 5px;
-	display: inline-block;
-	background: #bca66d;
-	border-top-right-radius: 5px;
-	border-top-left-radius: 5px;
-}
-.header a{
-	display: block;
-	text-decoration: none;
-	color:black;
-
-}
-
-.slider {
-	padding: 0;
+header{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	overflow:hidden;
 	margin: 0;
-	text-align: center;
+	padding: 0;
+	background-color: silver;
+	font-size: 1.25em;
 }
+
+#headLink{
+	padding: 0.5vw 0.5vw 0.5vw 0.5vw;
+
+}
+#headLink:hover{
+	background-color:white;
+}
+
+#body{
+
+}
+
+footer{
+	
+}
+
+/* @media (max-width: 780px) {
+	
+} */
