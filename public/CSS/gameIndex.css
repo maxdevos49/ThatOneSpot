@@ -1,102 +1,98 @@
-html{
-	background: white;
-	padding: 0;
-	margin:0;
-	width:100%;
-}
+
 body {
-	margin:0;
-	padding: 0;
+	margin: 0;
 	font-family: 'Aldrich';
+	display:flex;
+	flex-direction: column;
 }
 
-
-.header div {
+header{
+	display: flex;
+	flex-direction: row;
 	background:  #771414;
 	color:white;
-	width:100%;
-	margin: 0;
-	padding: 30px 0 30px 0;
+	font-size: 1.25em;
+	flex-wrap: wrap;
+	overflow: hidden;
 	text-shadow: 3px 3px black;
-
+}
+.headLink{
+	padding: 0.5vw; 
 }
 
-.footer div {
-	background: #771414;
-	width:100%;
-	margin: 0;
-	padding: 0;
-	color: grey;
-
-}
-
-#menuBar {
-	float: left;
-	margin: 0 0 0 0;
-	padding: 0;
-	width:100%;
-	background: silver;
-	height:800px;
-
-}
-
-#menuBar td{
-	color:white;
-	text-shadow: 1px 1px black;
-	box-shadow: 1px 1px white;
-	text-align:center;
-	padding: 30px 0 30px 0;
-
-}
-
-#menuBar td:hover{
-	animation-name: test;
-	animation-duration: 1s;
-	background:red;
-}
-
-#mainBody {
-	float: right;
-	margin: 0;
-	padding: 0;
-	width:75%;
-	background: white;
-	height:800px;
-}
-a {
-	text-decoration: none;
-	color: grey;
-}
-
-#titleDiv {
-	transform: rotate(-8deg);
-	width:30%;
-	background: #beba46;
-	margin: -100px 0 0 0;
-	
-}
-#titleDiv2 {
-	transform: rotate(7deg);
-	width:30%;
-	background: #beba46;
-	
-
+.headLink:hover {
+	background-color: red;
 }
 
 .highlight {
 	background: #beba46;
-	width: 100%;
-	height:5px;
+	width: 100vw;
+	height:1vh;
 
 }
 
-@keyframes test{
-	from {background-color: #8bd3fb;}
-	to {background-color: red;}
+#body {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	font-size: 1em;
+	background-color: rgb(105, 97, 97);
 }
 
-*{
-	margin: 0;
-	padding: 0;
+footer{
+	background: #771414;
+	color: white;
+	display:flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	overflow: hidden;
+	text-shadow: 3px 3px black;
+}
 
+.footLink{
+
+	padding: 0.5vw;
+
+}
+
+
+
+.projectBox {
+	width: 75vw;
+	height: 20vw;
+	display:flex;
+	flex-direction: row;
+	background-color: rgb(105, 97, 97);
+	border: solid #771414 7px;
+	border-radius: 5px;
+	margin: 1vh 0 1vh 0;
+	overflow: hidden;
+	padding: 5px;
+}
+
+.projectBox:hover{
+	  
+	border-color: red;
+}
+
+.projectImg {
+	width: 50%;
+	border-radius: 10px;
+	/* background-image: url("../Images/pacman.png"); */
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.projectDesc {
+	width:50%;
+	overflow: hidden;
+	padding: 4px;
+}
+
+
+a {
+	color: whitesmoke;
+	text-decoration: none;
 }
