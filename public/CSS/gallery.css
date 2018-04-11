@@ -3,7 +3,6 @@ body{
 	flex-direction: column;
 	font-family: "Aldrich";
 	margin: 0;
-	pading:0;
 }
 header{
 	display:flex;
@@ -25,11 +24,36 @@ header{
 }
 
 #body{
-
+	display: flex;
+	align-items: center;
+	background-color: rgb(224, 224, 224);
+	width:100vw;
+	justify-content: center;
 }
 
-footer{
+#body div {
+		width:85vw;
+		height: 100vh;
+		text-align: center;
+		border: 10px solid rgb(172, 172, 172);
+		border-radius: 10px;
+		margin: 1vw;
+}
+
+#footer{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	background-color:white;
+}
+
+#footerTxt{
 	
+}
+
+a{
+	text-decoration: none;
+	color: rgb(75, 72, 72);
 }
 
 /* @media (max-width: 780px) {
