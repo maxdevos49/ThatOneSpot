@@ -42,7 +42,7 @@ header{
 
 footer{
 	background: #771414;
-	color: grey;
+	color: white;
 	display:flex;
 	justify-content: center;
 	align-content: center;
@@ -69,11 +69,12 @@ footer{
 	border-radius: 5px;
 	margin: 1vh 0 1vh 0;
 	overflow: hidden;
+	padding: 5px;
 }
 
 .projectBox:hover{
 	  
-	border-color: whitesmoke;
+	border-color: red;
 }
 
 .projectImg {
