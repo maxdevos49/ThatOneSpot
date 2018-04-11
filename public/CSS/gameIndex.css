@@ -68,21 +68,6 @@ a {
 	color: grey;
 }
 
-#titleDiv {
-	transform: rotate(-8deg);
-	width:30%;
-	background: #beba46;
-	margin: -100px 0 0 0;
-	
-}
-#titleDiv2 {
-	transform: rotate(7deg);
-	width:30%;
-	background: #beba46;
-	
-
-}
-
 .highlight {
 	background: #beba46;
 	width: 100%;
