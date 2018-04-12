@@ -1,0 +1,10 @@
+node_modules
+*.c
+*.cpp
+*.exe
+.DS_Store
+*.java
+*.class
+*.txt
+*.php
+*.sh
