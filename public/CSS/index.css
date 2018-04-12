@@ -1,8 +1,20 @@
-body, html {
+body{
 	font-family: Aldrich;
-	margin: 0;
+	display:flex;
+	flex-direction: column;
+	margin:0;
+	padding:0;
 }
 
+
+.img {
+	height:100vh;
+	z-index: 0;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: white;
+	
+}
 #img1 {
 	background-image: url("../Images/secondTree.png");
 }
@@ -12,139 +24,66 @@ body, html {
 #img3 {
 	background-image: url("../Images/bowlingAlley.png");
 }
-.img {
-	height:100vh;
-	width: 100vw;
-	margin: 0;
-	background-size: cover;
-	background-attachment: fixed;
-	background-color: white;
-	z-index: 0;
-}
 .text {
-	width: 100vw;
 	background-color: grey;
-	z-index: 1;
-	margin:0;
-	padding: 0;
-	position: relative;
 }
 
-.header{
-	width: 97.5vw;
+header{
 	position: fixed;
-	z-index: 2;
+	z-index: 10;
+	display: flex;
+	flex-direction: row;
 	background-color: grey;
-	top: 0;
-	left: 0;
-	padding: 5px;
+	justify-content: flex-start;
+	width:100vw;
 }
-#txt1div{
+
+.headLink{
+	padding: 0.5vw;
+	font-size: 1.25em;
+}
+
+.headLink:hover{
+	background-color: white;
+	color: grey;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(226, 221, 221);
+}
+
+footer{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+#terminalBackground{
 	background: black; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#c3c6cc 15%, black 16%); /* Safari 5.1-6.0 */
     background: -o-linear-gradient(#c3c6cc 15%, black 16%); /* For Opera 11.6 to 12.0 */
     background: -moz-linear-gradient(#c3c6cc 15%, black 16%); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#c3c6cc 15%, black 16%); /* Standard syntax (must be last) */
-	width: 96%;
-	padding: 25px 10px 10px 10px;
+	
 	color: #4dff26;
 	border-radius: 5px;
 	font-family: "courier new", Courier, monospace;
-	margin: 5px 0 10px 0;
-}
-#txt1p1{
-	width: 96vw;
-	padding: 10px;
-	background: black; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#c3c6cc 12%, #393c42 13%); /* Safari 5.1-6.0 */
-    background: -o-linear-gradient(#c3c6cc 12%, #393c42 13%); /* For Opera 11.6 to 12.0 */
-    background: -moz-linear-gradient(#c3c6cc 12%, #393c42 13%); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#c3c6cc 12%, #393c42 13%); /* Standard syntax (must be last) */
-	border-radius: 5px;
-	color: grey;
-	position: relative;
-}
-#txt1 ol{
-	padding-top: 17px;
 }
 
-#txt1  div h2,p{
-	text-align: center;
-	color: black;
-}
-#txt1p2{
-	background: none;
-	background-color: white;
-	position: absolute;
-	left:25vw;
-	top:10vh;
-	width:50vw;
-	padding-bottom: 10px;
-	border-radius: 5px;
-}
-#txt2 div{
-	width: 97vw;
-	padding: 10px;
+#editorBackground{
 	background: black; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#c3c6cc 9%, #393c42 10%); /* Safari 5.1-6.0 */
     background: -o-linear-gradient(#c3c6cc 9%, #393c42 10%); /* For Opera 11.6 to 12.0 */
     background: -moz-linear-gradient(#c3c6cc 9%, #393c42 10%); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#c3c6cc 9%, #393c42 10%); /* Standard syntax (must be last) */
+	background: linear-gradient(#c3c6cc 9%, #393c42 10%); /* Standard syntax (must be last) */
+	
+	color: white;
 	border-radius: 5px;
-	color: white;
-}
-#txt2 h2{
-	margin:0 0 0 0;
-	padding: 0;
-	color:black;
-}
-#txt2 pre{
-	margin: 25px 0 0 0;
-	padding: 0;
-	font-size: 135%;
-}
-#txt3 {
-	height: 10vh;
-}
-#txt3 div{
-	background-color: silver;
-	width: 97.5vw;
-	padding: 5px;
-}
-#txt3 h3{
-
-}
-ul,ol {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
-.header li {
-    display: inline;
-    padding: 10px 10px 10px 10px;
-    font-size: 150%;
-    color: white;
-}
-pre {
-	margin: 0;
-	padding: 0;
-}
-
-a {
-	text-decoration: none;
-	color: white;
-	/* display:inline-block; */
-
-}
-a:hover {
+#txt3{
 	background-color: silver;
 }
 
-#grad1 {
-    background: black; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#c3c6cc 5%, black 6%); /* Safari 5.1-6.0 */
-    background: -o-linear-gradient(#c3c6cc 5%, black 6%); /* For Opera 11.6 to 12.0 */
-    background: -moz-linear-gradient(#c3c6cc 5%, black 6%); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#c3c6cc 5%, black 6%); /* Standard syntax (must be last) */
-}
+
