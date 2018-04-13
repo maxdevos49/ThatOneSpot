@@ -26,6 +26,7 @@ body{
 }
 .text {
 	background-color: grey;
+	padding:1vw;
 }
 
 header{
@@ -61,14 +62,19 @@ footer{
 
 #terminalBackground{
 	background: black; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#c3c6cc 15%, black 16%); /* Safari 5.1-6.0 */
-    background: -o-linear-gradient(#c3c6cc 15%, black 16%); /* For Opera 11.6 to 12.0 */
-    background: -moz-linear-gradient(#c3c6cc 15%, black 16%); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#c3c6cc 15%, black 16%); /* Standard syntax (must be last) */
+    background: -webkit-linear-gradient(#c3c6cc 2vh, black 2vh); /* Safari 5.1-6.0 */
+    background: -o-linear-gradient(#c3c6cc 2vh, black 2vh); /* For Opera 11.6 to 12.0 */
+    background: -moz-linear-gradient(#c3c6cc 2vh, black 2vh); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#c3c6cc 2vh, black 2vh); /* Standard syntax (must be last) */
 	
 	color: #4dff26;
 	border-radius: 5px;
 	font-family: "courier new", Courier, monospace;
+
+	padding-top: 3vh;
+	padding-left: 0.25vw;
+
+	overflow: hidden;
 }
 
 #editorBackground{
@@ -80,10 +86,67 @@ footer{
 	
 	color: white;
 	border-radius: 5px;
+
+	padding-top: 3vh;
+	padding-left: 0.25vw;
+
+	overflow: hidden;
 }
 
-#txt3{
-	background-color: silver;
-}
+
+.blinking-cursor {
+	-webkit-animation: 1s blink step-end infinite;
+	-moz-animation: 1s blink step-end infinite;
+	-ms-animation: 1s blink step-end infinite;
+	-o-animation: 1s blink step-end infinite;
+	animation: 1s blink step-end infinite;
+  }
+  
+  @keyframes blink {
+	from, to {
+	  color: transparent;
+	}
+	50% {
+	  color: #4dff26;
+	}
+  }
+  
+  @-moz-keyframes blink {
+	from, to {
+	  color: transparent;
+	}
+	50% {
+	  color: #4dff26;
+	}
+  }
+  
+  @-webkit-keyframes blink {
+	from, to {
+	  color: transparent;
+	}
+	50% {
+	  color: #4dff26;
+	}
+  }
+  
+  @-ms-keyframes blink {
+	from, to {
+	  color: transparent;
+	}
+	50% {
+	  color: #4dff26;
+	}
+  }
+  
+  @-o-keyframes blink {
+	from, to {
+	  color: transparent;
+	}
+	50% {
+	  color: #4dff26;
+	}
+  }
+
+
 
 
