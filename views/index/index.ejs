@@ -3,25 +3,19 @@
 	<head>
 
 		<title>ThatOneSpot</title>
-		<link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'/>
 		<link rel="stylesheet" type="text/css" href="CSS/index.css"/>
-		<link rel="shortcut icon" href="Images/favicon.ico"/>
 	  	<meta name="description" content="My Website">
-		<meta name="keywords" content="HTML,CSS,Javascript">
-	 	<meta name="author" content="Max DeVos">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML,CSS,Javascript">
+        
+        <%- include("../partials/head") %>
+
 		  
 	</head>
 	<body>
 	<div class="img" id="img1"></div>
-	<header>
 
-		<p class="headLink"><a href="/index.html">Home</a></p>
-		<p class="headLink"><a href="/resume.html">Resume</a></p>
-		<p class="headLink"><a href="/projects/index.html">Projects</a></p>
-		<p class="headLink"><a href="/gallery.html">Gallery</a></p>
+        <%- include("../partials/header") %>
 
-	</header>
 	<div class="text" id="txt1">
 
 		<pre id="terminalBackground">
@@ -74,10 +68,8 @@ terminal$ <span class="blinking-cursor">|</span>
 		</p>
 		
 	</div>
-	<footer>
 
-		<p>&#169;Copyright 2017-2018 Max DeVos</p>
+        <%- include("../partials/footer") %>
 
-	</footer>
 	</body>
 </html>

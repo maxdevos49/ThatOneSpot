@@ -1,9 +1,13 @@
 
-//require server components
+//start the server with express
 const express = require('express');
 const app = express();
 const server = require('http').Server(app);
+
+//use this to display the ip for connecting
 const ip = require('ip');
+
+//determine the port to listen too
 const port = process.env.PORT || 8080;
 
 //let the server listen on port 80
@@ -22,7 +26,7 @@ console.log(`ThatOneSpot is Running! IP is ${ip.address()}:${port}`);
 app.get('/', (req, res) => {
 
   //respond with this for the client
-  res.sendFile(__dirname + '/index.html');
+  res.render('/index/index.ejs');
   console.log("Connection!");
 
 });
@@ -30,7 +34,7 @@ app.get('/', (req, res) => {
 app.get('/index.html', (req, res) => {
 
   //respond with this for the client
-  res.sendFile(__dirname + '/index.html');
+  res.render("index/index.ejs");
   console.log("Connection!");
 
 });
