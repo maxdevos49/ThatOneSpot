@@ -9,11 +9,14 @@ const port = process.env.PORT || 8080;
 //let the server listen on port 80
 server.listen(port);
 
-//tell console the server is running
-console.log(`ThatOneSpot is Running! IP is ${ip.address()}:${port}`);
+// set the view engine to ejs
+app.set('view engine', 'ejs')
 
 //tell where to find page depended info. css/javascript/images/audio/and other stuff
 app.use(express.static('public'));
+
+//tell console the server is running
+console.log(`ThatOneSpot is Running! IP is ${ip.address()}:${port}`);
 
 //do this on a connection from the client
 app.get('/', (req, res) => {
