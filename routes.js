@@ -1,8 +1,11 @@
 module.exports = function(app) {
 
     //require pages routes
-    const template = require('./views/template/routes.js')(app);
-    const index = require('./views/index/routes.js')(app);
+    require('./views/template/routes.js')(app);
+    require('./views/index/routes.js')(app);
+    require('./views/gallery/routes.js')(app);
+    require('./views/resume/routes.js')(app);
+    require('./views/projects/routes.js')(app);
 
 
 
