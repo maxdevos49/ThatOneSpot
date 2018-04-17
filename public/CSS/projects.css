@@ -1,23 +1,9 @@
 
-body {
-	margin: 0;
-	font-family: 'Aldrich';
-	display:flex;
-	flex-direction: column;
-}
 
 header{
-	display: flex;
-	flex-direction: row;
 	background:  #771414;
 	color:white;
-	font-size: 1.25em;
-	flex-wrap: wrap;
-	overflow: hidden;
 	text-shadow: 3px 3px black;
-}
-.headLink{
-	padding: 0.5vw; 
 }
 
 .headLink:hover {
@@ -43,21 +29,8 @@ header{
 footer{
 	background: #771414;
 	color: white;
-	display:flex;
-	justify-content: center;
-	align-content: center;
-	flex-wrap: wrap;
-	overflow: hidden;
 	text-shadow: 3px 3px black;
 }
-
-.footLink{
-
-	padding: 0.5vw;
-
-}
-
-
 
 .projectBox {
 	width: 75vw;
@@ -94,5 +67,4 @@ footer{
 
 a {
 	color: whitesmoke;
-	text-decoration: none;
 }

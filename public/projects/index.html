@@ -3,26 +3,18 @@
 	<head>
 
 	<title>My Projects</title>
-	<!-- Made By the Madmax starting on July 19, 2017 -->
+	<!-- Made By the Maxwell DeVos starting on July 19, 2017 -->
 
-	<link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="../CSS/gameIndex.css">
-	<meta name="description" content="My Website">
-	<meta name="keywords" content="Games">
- 	<meta name="author" content="Maxwell DeVos">
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="Projects">
+
+	<%- include("../partials/head") %>
+
 	</head>
 
 	<body>
 
-		<header>
-
-			<p class="headLink"><a href="../index.html">Home</a></p>
-			<p class="headLink"><a href="../resume.html">Resume</a></p>
-			<p class="headLink"><a href="index.html">Projects</a></p>
-			<p class="headLink"><a href="../gallery.html">Gallery</a></p>
-
-		</header>
+		<%- include("../partials/header") %>
 
 		<div class='highlight'></div>
 
@@ -42,7 +34,7 @@
 					</div>
 				</a>
 
-			<a href="pacMan.html">
+			<a href="/projects/pacMan.html">
 				<div class="projectbox">
 
 					<div class="projectImg"><img src="../Images/pacman.png" height="100%" width="100%"></div>
@@ -113,10 +105,7 @@
 					
 		</div>
 		
-		<footer>
-			<p class="footLink">&#169;Copyright 2017 Max DeVos</p>
-		</footer>
-
+		<%- include("../partials/footer") %>
 
 	</body>
 </html>
