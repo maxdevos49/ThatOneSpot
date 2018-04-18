@@ -1,11 +1,3 @@
-body{
-	font-family: Aldrich;
-	display:flex;
-	flex-direction: column;
-	margin:0;
-	padding:0;
-}
-
 
 .img {
 	height:100vh;
@@ -14,6 +6,11 @@ body{
 	background-attachment: fixed;
 	background-color: white;
 	
+}
+
+header{
+	position: fixed;
+	z-index: 10;
 }
 #img1 {
 	background-image: url("../Images/secondTree.png");
@@ -29,26 +26,6 @@ body{
 	padding:1vw;
 	position: relative;
 	color: white;
-}
-
-header{
-	position: fixed;
-	z-index: 10;
-	display: flex;
-	flex-direction: row;
-	background-color: grey;
-	justify-content: flex-start;
-	width:100vw;
-}
-
-.headLink{
-	padding: 0.5vw;
-	font-size: 1.25em;
-}
-
-.headLink:hover{
-	background-color: white;
-	color: grey;
 }
 
 #myTitle{
@@ -71,11 +48,7 @@ a {
 	color: #91f07b;
 }
 
-footer{
-	display: flex;
-	justify-content: center;
-	align-content: center;
-}
+
 
 #terminalBackground{
 	background: black; /* For browsers that do not support gradients */

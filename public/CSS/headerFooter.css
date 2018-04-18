@@ -1,0 +1,42 @@
+body{
+	font-family: Aldrich;
+	display:flex;
+	flex-direction: column;
+	margin:0;
+	padding:0;
+	
+}
+
+header{
+	display: flex;
+	flex-direction: row;
+	background-color: grey;
+	justify-content: flex-start;
+	width:100vw;
+}
+
+.headLink{
+	padding: 0.5vw;
+	font-size: 1.25em;
+}
+
+.headLink:hover{
+	background-color: white;
+	color: grey;
+}
+
+a {
+    text-decoration: none;
+    color:  #91f07b;
+}
+
+footer{
+	display: flex;
+	justify-content: center;
+    align-content: center;
+    color: black;
+}
+
+#body{
+
+}
