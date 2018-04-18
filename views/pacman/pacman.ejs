@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+<!-- pacman v1.0 -->
+<!-- February 14, 2016 -->
+
+<head>
+  <title>PacMan</title>
+
+  <%- include("../partials/head") %>
+
+  <script type="text/javascript" src="Javascript/pacman/pacMan.js"></script>
+  <script type="text/javascript" src="Javascript/pacman/level.js"></script>
+  <script type="text/javascript" src="Javascript/pacman/pacManDrawFunc.js"></script>
+</head>
+
+<body onload="init()">
+
+	<%- include("../partials/header") %>
+
+    <div id="body">
+      <canvas id='pacManCanvas' height='600px' width='1050px'>If you see this you must still be in 2005!</canvas>
+	</div>
+	
+	<%- include("../partials/footer") %>
+
+</body>
+
+</html>
