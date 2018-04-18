@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BlockJumper</title>
+
+	<%- include("../partials/head") %>
+
+	<link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+	<script type="text/javascript" src="/Javascript/BlockJumper/BJMain.js" script></script>
+	<script type="text/javascript" src="/Javascript/BlockJumper/BJLevelData.js" script></script>
+	<script type="text/javascript" src="/Javascript/BlockJumper/BJEvents.js" script></script>
+	<script type="text/javascript" src="/Javascript/BlockJumper/BJDraw.js" script></script>
+	<meta name="description" content="BlockJumper">
+	<style type="text/css">
+		*{
+			font-family: 'Aldrich';
+		}
+		canvas {
+			margin: 10px 2% 0 2%;
+		}
+	</style>
+</head>
+<body onload='init()'>
+
+		<%- include("../partials/header") %>
+	<canvas id="gameCanvas" width="1200" height="600">If you see this then you must be on your grandmas computer :D</canvas>
+	<div style="visibility: hidden;">.</div>
+	<div id="case"></div>
+	<%- include("../partials/footer") %>
+</body>
+</html>

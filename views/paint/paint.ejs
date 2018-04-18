@@ -1,0 +1,231 @@
+<!-- web paint v1.1 -->
+<!-- February 2, 2016 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Paint</title>
+
+  <%- include("../partials/head") %>
+
+  <style type="text/css">*{
+ margin:0;
+ padding:0;
+}
+html{
+  background:#555;
+}
+
+canvas{
+  cursor: crosshair;
+}
+
+.canvasPositioningFrame{
+  width:620px;
+  height:520;
+  padding:10px 0 0 0;
+  margin:10px 0 0 0;
+  background:white;
+  border-radius:5px;
+}
+
+.controlFrame{
+  width:620px;
+  height:100px;
+  padding:4px;
+  margin:10px 0 0 0;
+  background:tan;
+  border-radius:5px;
+  display: inline-block;
+}
+
+.colorButts{
+  width:50px;
+  height:30px;
+}
+.eraserButt{
+  width:40px;
+  height:90px;
+}
+.eraserFrame{
+  display: inline-block;
+ float:left;
+}
+.colorFrame{
+  margin-left:5px;
+  display: inline-block;
+  float:left;
+}
+
+.tipFrame{
+  margin-left:5px;
+  display: inline-block;
+  float:left;
+}
+.instructionFrame{
+  margin:2px 0 0 15px;
+  display: inline-block;
+  float:left;
+  border-radius:4px;
+  background:white;
+  color:black;
+  padding:3px;
+}</style>
+  <script>//web paint v1.1
+//February 2, 2016
+
+function init(){
+  
+  //set some position variables
+  width = 600;
+  height = 500;
+  xOffSet = screen.width/2 - 300;
+  yOffSet = 20;
+  
+  //set some drawing variables
+  draw = "False";
+  tipSize = 10;
+  color = "red"
+  tipType = "circle"
+  
+  //set up the canvas
+  drawingCanvas = document.getElementById('drawingCanvas');
+  canvas = drawingCanvas.getContext('2d');
+  
+  //makes some event listeners
+  drawingCanvas.addEventListener("mousedown", onMouseDown);
+  drawingCanvas.addEventListener("mouseup", onMouseUp);
+  drawingCanvas.addEventListener("mousemove", onMouseMove);
+}
+
+//function triggered when mouse is pressed down
+function onMouseDown(){
+  
+  //debug
+  console.log("Mouse Down!");
+  
+  //change draw status
+  draw = "True";
+  drawFunc();
+  
+}
+
+//function triggered when mouse is released
+function onMouseUp(){
+  
+  //debug
+  console.log("Mouse Up!");
+  
+  //change draw status
+  draw = "False";
+  
+}
+
+//function triggered when mouse is moved
+function onMouseMove(){
+  
+  //debug
+  console.log("Mouse Moved!");
+  
+  //draw
+  drawFunc();
+  
+}
+
+function drawFunc(){
+  if (draw == "True"){
+    
+    //tell where to draw
+    x = event.clientX;
+    y = event.clientY;
+    
+    //give the drawing color
+    canvas.fillStyle = color;
+    
+    if (tipType == "square"){
+      
+      //draw the square
+      canvas.fillRect(x - (tipSize/2 + xOffSet),y - (tipSize/2 + yOffSet),tipSize,tipSize);
+      
+    }else if(tipType == "circle"){
+      
+      canvas.beginPath();
+      canvas.arc(x - ((tipSize/2)/2 + xOffSet),y - yOffSet,tipSize/2,Math.PI * 2,false);
+      canvas.fill();
+      
+    }
+  }
+}
+
+function changeColor(colorChange){
+  color = colorChange;
+}
+
+function changeTipSize(newTipSize){
+  tipSize = newTipSize;
+  document.getElementById('tipInfo').innerHTML = "Tip Size: " + tipSize + "px";
+}
+
+function changeTipType(newTipType){
+  tipType = newTipType;
+}
+</script>
+</head>
+
+<body>
+
+		<%- include("../partials/header") %>
+
+    <div class="canvasPositioningFrame">
+      <canvas id='drawingCanvas' height='500px' width='600px'>If you see this you must still be in 2005!</canvas>
+    </div>
+
+    <div class="controlFrame">
+
+      <div class="colorFrame">
+        <button class="colorButts" onclick="changeColor('red')" style="background:red;">Red</button>
+        <button class="colorButts" onclick="changeColor('orange')" style="background:orange;">Orange</button>
+        <br>
+        <button class="colorButts" onclick="changeColor('yellow')" style="background:yellow;">Yellow</button>
+        <button class="colorButts" onclick="changeColor('green')" style="background:green;">Green</button>
+        <br>
+        <button class="colorButts" onclick="changeColor('blue')" style="background:blue;">Blue</button>
+        <button class="colorButts" onclick="changeColor('purple')" style="background:purple;">Purple</button>
+      </div>
+
+      <div class="eraserFrame">
+        <button class="eraserButt" onclick="changeColor('white')" style="background:white;">Eraser</button>
+      </div>
+
+      <div class='tipFrame'>
+        <center>
+          <p id='tipInfo'>Tip Size: 10px</p>
+          <button onclick='changeTipSize(tipSize - 1)'><<<</button>
+          <button onclick='changeTipSize(tipSize + 1)'>>>></button>
+          <p>Tip Type</p>
+          <button onclick='changeTipType("square")'>Square</button>
+          <button onclick='changeTipType("circle")'>Circle</button>
+        </center>
+      </div>
+
+      <div class="instructionFrame">
+        <center>
+          <p>
+            Draw what you feel like. Hint drawing
+            <br>slower works better and you should 
+            <br>have your browser full screen. More 
+            <br>features will come later! To save a picture,
+            <br>right click and select save image as.
+          </p>
+        </center>
+      </div>
+    </div>
+      
+	<%- include("../partials/footer") %>
+    
+</body>
+<script>
+  init()
+</script>
+
+</html>
