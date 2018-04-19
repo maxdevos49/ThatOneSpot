@@ -8,17 +8,17 @@
   <title>PacMan</title>
 
   <%- include("../partials/head") %>
-
-  <script type="text/javascript" src="Javascript/pacman/pacMan.js"></script>
-  <script type="text/javascript" src="Javascript/pacman/level.js"></script>
-  <script type="text/javascript" src="Javascript/pacman/pacManDrawFunc.js"></script>
+  <link rel="stylesheet" type="text/css" href="/CSS/pacman.css"/>
+  <script type="text/javascript" src="/Javascript/pacman/pacMan.js"></script>
+  <script type="text/javascript" src="/Javascript/pacman/level.js"></script>
+  <script type="text/javascript" src="/Javascript/pacman/pacManDrawFunc.js"></script>
 </head>
 
 <body onload="init()">
 
 	<%- include("../partials/header") %>
 
-    <div id="body">
+  <div id="body">
       <canvas id='pacManCanvas' height='600px' width='1050px'>If you see this you must still be in 2005!</canvas>
 	</div>
 	

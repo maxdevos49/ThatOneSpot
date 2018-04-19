@@ -68,3 +68,11 @@ footer{
 a {
 	color: whitesmoke;
 }
+
+@media (max-width: 780px) {
+
+	.desc{
+		display: none;
+	}
+
+}
