@@ -1,13 +1,13 @@
 //web paint v1.1
 //February 2, 2016
 
+var drawingCanvas;
+
 function init(){
   
   //set some position variables
   width = 600;
   height = 500;
-  xOffSet = screen.width/2 - 300;
-  yOffSet = 20;
   
   //set some drawing variables
   draw = "False";
@@ -29,7 +29,7 @@ function init(){
 function onMouseDown(){
   
   //debug
-  console.log("Mouse Down!");
+  //console.log("Mouse Down!");
   
   //change draw status
   draw = "True";
@@ -41,7 +41,7 @@ function onMouseDown(){
 function onMouseUp(){
   
   //debug
-  console.log("Mouse Up!");
+  //console.log("Mouse Up!");
   
   //change draw status
   draw = "False";
@@ -52,7 +52,7 @@ function onMouseUp(){
 function onMouseMove(){
   
   //debug
-  console.log("Mouse Moved!");
+  //console.log("Mouse Moved!");
   
   //draw
   drawFunc();
@@ -65,6 +65,17 @@ function drawFunc(){
     //tell where to draw
     x = event.clientX;
     y = event.clientY;
+
+    var rect = drawingCanvas.getBoundingClientRect();
+
+    xOffSet = rect.left;
+    yOffSet = rect.top;
+
+    console.log(`X: ${x}`);
+    console.log(`Y: ${y}`);
+
+    console.log(`X2: ${xOffSet}`);
+    console.log(`Y2: ${yOffSet}`);
     
     //give the drawing color
     canvas.fillStyle = color;
@@ -90,7 +101,7 @@ function changeColor(colorChange){
 
 function changeTipSize(newTipSize){
   tipSize = newTipSize;
-  document.getElementById('tipInfo').innerHTML = "Tip Size: " + tipSize + "px";
+  document.getElementById('tip').innerHTML = "Tip Diameter: " + tipSize + "px";
 }
 
 function changeTipType(newTipType){
