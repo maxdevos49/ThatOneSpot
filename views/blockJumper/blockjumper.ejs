@@ -16,16 +16,20 @@
 			font-family: 'Aldrich';
 		}
 		canvas {
-			margin: 10px 2% 0 2%;
+			display: block;
 		}
 	</style>
 </head>
 <body onload='init()'>
 
-		<%- include("../partials/header") %>
-	<canvas id="gameCanvas" width="1200" height="600">If you see this then you must be on your grandmas computer :D</canvas>
-	<div style="visibility: hidden;">.</div>
-	<div id="case"></div>
+	<%- include("../partials/header") %>
+
+	<div id="body">
+		<canvas id="gameCanvas" width="1200" height="600">If you see this then you must be on your grandmas computer :D</canvas>
+		<div style="visibility: hidden;">.</div>
+		<div id="case"></div>
+	</div>
+
 	<%- include("../partials/footer") %>
 </body>
 </html>

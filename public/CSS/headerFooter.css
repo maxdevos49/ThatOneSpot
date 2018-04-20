@@ -37,6 +37,6 @@ footer{
     color: black;
 }
 
-#body{
+@media (max-width: 780px) {
 
 }

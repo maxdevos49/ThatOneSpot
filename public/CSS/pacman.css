@@ -1,0 +1,11 @@
+canvas{
+    width: 75vw;
+    margin: 10vw;
+}
+
+@media (max-width: 780px) {
+  canvas{
+        width: 100vw;
+        margin: 3vw 0 3vw 0;
+  }
+}
